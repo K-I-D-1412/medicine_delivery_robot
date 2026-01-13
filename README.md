@@ -5,7 +5,9 @@
 ## Introduction
 This project implements a robot vision system using **ROS** and **OpenCV**. The robot navigates autonomously through a path defined by dense traffic cones, detects specific targets (medicine pills) at intersections, and makes turning decisions based on the target type.
 
-![Demo GIF](IMG/robot.gif)
+<p align="center">
+  <img src="IMG/robot.gif" alt="RobotDemo" />
+</p>
 
 ## Features
 * **Cone Detection**: Detects red traffic cones using HSV color space and contour analysis.
@@ -48,7 +50,11 @@ This project implements a robot vision system using **ROS** and **OpenCV**. The 
 
 ## Algorithm Details
 The core algorithm relies on **Color Segmentation** and **Logic Control**:
-![Demo GIF](IMG/screen.gif)
+
+<p align="center">
+  <img src="IMG/screen.gif" alt="ScreenDemo" />
+</p>
+
 1.  **Preprocessing**: Gaussian Blur & Histogram Equalization.
 2.  **Cone Detection**: 
     * Combines two red masks in HSV space.
