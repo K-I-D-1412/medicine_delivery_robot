@@ -1,0 +1,20 @@
+# 忽略编译生成的文件
+build/
+devel/
+install/
+log/
+.catkin_workspace
+
+# 忽略 IDE 配置文件 (VS Code, JetBrains)
+.vscode/
+.idea/
+*.user
+
+# 忽略临时文件
+*~
+*.swp
+*.pyc
+
+# 忽略编译出的二进制文件
+/bin/
+/lib/
