@@ -9,6 +9,20 @@ This project implements a robot vision system using **ROS** and **OpenCV**. The 
   <img src="IMG/robot.gif" alt="RobotDemo" />
 </p>
 
+## Algorithm Flowchart
+
+The system is controlled by a finite state machine, coordinating image acquisition, cone detection, motion planning, and pill recognition.
+
+<p align="center">
+  <img src="IMG/FG.PNG" width="90%" />
+</p>
+
+The workflow includes:
+1.  **Main Function**: Manages the robot's state (Forward, Check, Turn, Stop).
+2.  **Cone Detection**: Extracts visual features of the track using HSV and contour analysis.
+3.  **Motion Planning**: Calculates the steering angle based on the centerline of the cones.
+4.  **Pill Detection**: Identifies target patterns using color masks and connected components.
+
 ## Features
 * **Cone Detection**: Detects red traffic cones using HSV color space and contour analysis.
 * **Path Planning**: Calculates the navigation angle based on the center points of the cones.
